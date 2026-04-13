@@ -1,0 +1,10 @@
+name: care-membrane-mcp
+description: "MEOK AI Labs — AI Safety evaluation toolkit that scores text for care-centered principles,"
+vendor: MEOK AI Labs
+homepage: https://meok.ai
+repository: https://github.com/CSOAI-ORG/care-membrane-mcp
+license: MIT
+categories: [AI Safety, Ethics]
+tags: [care-ethics, ai-safety, ethical-ai, content-moderation, safety-layer]
+runtime: python
+entrypoint: server.py
