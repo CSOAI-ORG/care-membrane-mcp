@@ -1,3 +1,5 @@
+> **By [MEOK AI Labs](https://meok.ai)** — Sovereign AI tools for everyone.
+
 # Care Membrane MCP Server
 
 AI Safety evaluation toolkit for LLM applications. Score text for care-centered alignment, detect threats and jailbreak attempts, analyze relationship health, predict burnout risk, and certify AI responses against the 16-probe Care Membrane framework.
