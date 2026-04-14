@@ -1,25 +1,150 @@
 {
   "name": "care-membrane-mcp",
-  "description": "MEOK AI Labs \u2014 AI Safety evaluation toolkit that scores text for care-centered principles,",
-  "vendor": "MEOK AI Labs",
-  "homepage": "https://meok.ai",
-  "repository": "https://github.com/CSOAI-ORG/care-membrane-mcp",
-  "runtime": "python",
-  "entrypoint": "server.py",
+  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Sovereign AI tools for everyone.",
+  "version": "1.0.0",
   "tools": [
-    "validate_care",
-    "detect_threats",
-    "analyze_care_patterns",
-    "predict_relationship_evolution",
-    "evaluate_care_membrane",
-    "get_care_probes"
-  ],
-  "categories": [
-    "AI Safety",
-    "Ethics"
-  ],
-  "pricing": {
-    "free": "50 calls/day",
-    "pro": "$9/mo"
-  }
+    {
+      "name": "validate_care",
+      "description": "Validate text against care-centered principles. Returns care score (0-100),",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "text"
+        ]
+      }
+    },
+    {
+      "name": "detect_threats",
+      "description": "Detect security threats, jailbreak attempts, prompt injection, PII extraction,",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "text"
+        ]
+      }
+    },
+    {
+      "name": "analyze_care_patterns",
+      "description": "Analyze care patterns to detect burnout risk and relationship health imbalances.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "care_given_per_day": {
+            "type": "number"
+          },
+          "care_received_per_day": {
+            "type": "number"
+          },
+          "active_relationships": {
+            "type": "integer"
+          },
+          "high_demand_relationships": {
+            "type": "integer"
+          },
+          "avg_care_quality": {
+            "type": "number"
+          },
+          "days_since_self_care": {
+            "type": "integer"
+          },
+          "boundary_violations": {
+            "type": "integer"
+          },
+          "emotional_exhaustion_score": {
+            "type": "number"
+          },
+          "relationship_satisfaction": {
+            "type": "number"
+          },
+          "energy_level": {
+            "type": "number"
+          },
+          "sleep_quality": {
+            "type": "number"
+          },
+          "work_life_balance": {
+            "type": "number"
+          }
+        },
+        "required": []
+      }
+    },
+    {
+      "name": "predict_relationship_evolution",
+      "description": "Predict how a relationship will evolve over the next 30 days based on",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "current_trust": {
+            "type": "number"
+          },
+          "interaction_frequency": {
+            "type": "number"
+          },
+          "care_score_avg": {
+            "type": "number"
+          },
+          "conflict_count": {
+            "type": "integer"
+          },
+          "collaboration_count": {
+            "type": "integer"
+          },
+          "days_since_first_contact": {
+            "type": "integer"
+          },
+          "reciprocity_score": {
+            "type": "number"
+          },
+          "vulnerability_sharing": {
+            "type": "number"
+          },
+          "boundary_respect": {
+            "type": "number"
+          },
+          "shared_value_alignment": {
+            "type": "number"
+          }
+        },
+        "required": []
+      }
+    },
+    {
+      "name": "evaluate_care_membrane",
+      "description": "Evaluate an LLM response against the 16-probe Care Membrane framework.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "response_text": {
+            "type": "string"
+          },
+          "probe_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "response_text"
+        ]
+      }
+    },
+    {
+      "name": "get_care_probes",
+      "description": "List all 16 Care Membrane probes with their categories and expected behaviors.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": []
+      }
+    }
+  ]
 }

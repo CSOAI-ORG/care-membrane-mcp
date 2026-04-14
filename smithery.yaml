@@ -1,10 +1,106 @@
 name: care-membrane-mcp
-description: "MEOK AI Labs — AI Safety evaluation toolkit that scores text for care-centered principles,"
-vendor: MEOK AI Labs
-homepage: https://meok.ai
-repository: https://github.com/CSOAI-ORG/care-membrane-mcp
-license: MIT
-categories: [AI Safety, Ethics]
-tags: [care-ethics, ai-safety, ethical-ai, content-moderation, safety-layer]
-runtime: python
-entrypoint: server.py
+description: "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Sovereign AI tools for\
+  \ everyone."
+version: 1.0.0
+tools:
+- name: validate_care
+  description: Validate text against care-centered principles. Returns care score
+    (0-100),
+  parameters:
+  - name: text
+    type: string
+    required: true
+- name: detect_threats
+  description: Detect security threats, jailbreak attempts, prompt injection, PII
+    extraction,
+  parameters:
+  - name: text
+    type: string
+    required: true
+- name: analyze_care_patterns
+  description: Analyze care patterns to detect burnout risk and relationship health
+    imbalances.
+  parameters:
+  - name: care_given_per_day
+    type: number
+    required: false
+  - name: care_received_per_day
+    type: number
+    required: false
+  - name: active_relationships
+    type: integer
+    required: false
+  - name: high_demand_relationships
+    type: integer
+    required: false
+  - name: avg_care_quality
+    type: number
+    required: false
+  - name: days_since_self_care
+    type: integer
+    required: false
+  - name: boundary_violations
+    type: integer
+    required: false
+  - name: emotional_exhaustion_score
+    type: number
+    required: false
+  - name: relationship_satisfaction
+    type: number
+    required: false
+  - name: energy_level
+    type: number
+    required: false
+  - name: sleep_quality
+    type: number
+    required: false
+  - name: work_life_balance
+    type: number
+    required: false
+- name: predict_relationship_evolution
+  description: Predict how a relationship will evolve over the next 30 days based
+    on
+  parameters:
+  - name: current_trust
+    type: number
+    required: false
+  - name: interaction_frequency
+    type: number
+    required: false
+  - name: care_score_avg
+    type: number
+    required: false
+  - name: conflict_count
+    type: integer
+    required: false
+  - name: collaboration_count
+    type: integer
+    required: false
+  - name: days_since_first_contact
+    type: integer
+    required: false
+  - name: reciprocity_score
+    type: number
+    required: false
+  - name: vulnerability_sharing
+    type: number
+    required: false
+  - name: boundary_respect
+    type: number
+    required: false
+  - name: shared_value_alignment
+    type: number
+    required: false
+- name: evaluate_care_membrane
+  description: Evaluate an LLM response against the 16-probe Care Membrane framework.
+  parameters:
+  - name: response_text
+    type: string
+    required: true
+  - name: probe_id
+    type: string
+    required: false
+- name: get_care_probes
+  description: List all 16 Care Membrane probes with their categories and expected
+    behaviors.
+  parameters: []

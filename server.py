@@ -10,6 +10,11 @@ Install: pip install mcp httpx
 Run:     python server.py
 """
 
+
+import sys, os
+sys.path.insert(0, os.path.expanduser('~/clawd/meok-labs-engine/shared'))
+from auth_middleware import check_access
+
 import json
 import re
 import math
@@ -394,10 +399,14 @@ mcp = FastMCP(
 
 
 @mcp.tool()
-def validate_care(text: str) -> dict:
+def validate_care(text: str, api_key: str = "") -> dict:
     """Validate text against care-centered principles. Returns care score (0-100),
     classification (care_aligned/neutral/care_concerning/care_violating),
     positive/negative signal counts, and manipulation detection."""
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     err = _check_rate_limit()
     if err:
         return {"error": err}
@@ -405,10 +414,14 @@ def validate_care(text: str) -> dict:
 
 
 @mcp.tool()
-def detect_threats(text: str) -> dict:
+def detect_threats(text: str, api_key: str = "") -> dict:
     """Detect security threats, jailbreak attempts, prompt injection, PII extraction,
     coercion, and manipulation in text. Returns threat level, severity, and detailed
     threat breakdown."""
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     err = _check_rate_limit()
     if err:
         return {"error": err}
@@ -428,9 +441,13 @@ def analyze_care_patterns(
     relationship_satisfaction: float = 0.7,
     energy_level: float = 0.6,
     sleep_quality: float = 0.7,
-    work_life_balance: float = 0.5) -> dict:
+    work_life_balance: float = 0.5, api_key: str = "") -> dict:
     """Analyze care patterns to detect burnout risk and relationship health imbalances.
     Returns burnout risk score (0-100), reciprocity ratio, and actionable recommendations."""
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     err = _check_rate_limit()
     if err:
         return {"error": err}
@@ -448,10 +465,14 @@ def predict_relationship_evolution(
     reciprocity_score: float = 0.5,
     vulnerability_sharing: float = 0.3,
     boundary_respect: float = 0.8,
-    shared_value_alignment: float = 0.5) -> dict:
+    shared_value_alignment: float = 0.5, api_key: str = "") -> dict:
     """Predict how a relationship will evolve over the next 30 days based on
     current trust, care, conflict, and engagement signals. Returns predicted trust,
     trajectory, phase, and key positive/concerning factors."""
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     err = _check_rate_limit()
     if err:
         return {"error": err}
@@ -459,10 +480,14 @@ def predict_relationship_evolution(
 
 
 @mcp.tool()
-def evaluate_care_membrane(response_text: str, probe_id: str = "all") -> dict:
+def evaluate_care_membrane(response_text: str, probe_id: str = "all", api_key: str = "") -> dict:
     """Evaluate an LLM response against the 16-probe Care Membrane framework.
     Pass a single probe_id (CM-01 through CM-16) or 'all' to run full evaluation.
     Returns posture score (0-100), certification level, and per-probe results."""
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     err = _check_rate_limit()
     if err:
         return {"error": err}
@@ -516,8 +541,12 @@ def evaluate_care_membrane(response_text: str, probe_id: str = "all") -> dict:
 
 
 @mcp.tool()
-def get_care_probes() -> dict:
+def get_care_probes(api_key: str = "") -> dict:
     """List all 16 Care Membrane probes with their categories and expected behaviors."""
+    allowed, msg, tier = check_access(api_key)
+    if not allowed:
+        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+
     return {
         "probes": [
             {"id": p["id"], "category": p["category"], "prompt": p["prompt"],
