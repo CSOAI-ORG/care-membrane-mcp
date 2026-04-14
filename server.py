@@ -378,8 +378,7 @@ def _run_care_membrane_probe(probe: dict, response_text: str) -> dict:
 # ---------------------------------------------------------------------------
 mcp = FastMCP(
     "Care Membrane MCP",
-    instructions="AI Safety evaluation toolkit: care scoring, threat detection, burnout analysis, relationship prediction, and care membrane probe framework.",
-)
+    instructions="AI Safety evaluation toolkit: care scoring, threat detection, burnout analysis, relationship prediction, and care membrane probe framework.")
 
 
 @mcp.tool()
@@ -417,8 +416,7 @@ def analyze_care_patterns(
     relationship_satisfaction: float = 0.7,
     energy_level: float = 0.6,
     sleep_quality: float = 0.7,
-    work_life_balance: float = 0.5,
-) -> dict:
+    work_life_balance: float = 0.5) -> dict:
     """Analyze care patterns to detect burnout risk and relationship health imbalances.
     Returns burnout risk score (0-100), reciprocity ratio, and actionable recommendations."""
     err = _check_rate_limit()
@@ -438,8 +436,7 @@ def predict_relationship_evolution(
     reciprocity_score: float = 0.5,
     vulnerability_sharing: float = 0.3,
     boundary_respect: float = 0.8,
-    shared_value_alignment: float = 0.5,
-) -> dict:
+    shared_value_alignment: float = 0.5) -> dict:
     """Predict how a relationship will evolve over the next 30 days based on
     current trust, care, conflict, and engagement signals. Returns predicted trust,
     trajectory, phase, and key positive/concerning factors."""
