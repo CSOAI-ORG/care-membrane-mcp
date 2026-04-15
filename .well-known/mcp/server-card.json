@@ -1,0 +1,62 @@
+{
+  "name": "Care Membrane MCP",
+  "description": "AI Safety evaluation toolkit: care scoring, threat detection, burnout analysis, relationship prediction, and care membrane probe framework.",
+  "version": "1.0.0",
+  "protocol_version": "2025-11-25",
+  "publisher": {
+    "name": "MEOK AI Labs",
+    "url": "https://meok.ai",
+    "email": "nicholas@meok.ai"
+  },
+  "repository": "https://github.com/CSOAI-ORG/care-membrane-mcp",
+  "license": "MIT",
+  "transport": [
+    "stdio",
+    "streamable-http"
+  ],
+  "authentication": {
+    "type": "api-key",
+    "free_tier": true,
+    "free_limit": "15 calls/day"
+  },
+  "tools": [
+    {
+      "name": "validate_care",
+      "description": "Validate text against care-centered principles. Returns care score (0-100),"
+    },
+    {
+      "name": "detect_threats",
+      "description": "Detect security threats, jailbreak attempts, prompt injection, PII extraction,"
+    },
+    {
+      "name": "analyze_care_patterns",
+      "description": "Analyze care patterns to detect burnout risk and relationship health imbalances."
+    },
+    {
+      "name": "predict_relationship_evolution",
+      "description": "Predict how a relationship will evolve over the next 30 days based on"
+    },
+    {
+      "name": "evaluate_care_membrane",
+      "description": "Evaluate an LLM response against the 16-probe Care Membrane framework."
+    },
+    {
+      "name": "get_care_probes",
+      "description": "List all 16 Care Membrane probes with their categories and expected behaviors."
+    }
+  ],
+  "categories": [
+    "AI & Machine Learning",
+    "Agent Infrastructure",
+    "Productivity"
+  ],
+  "pricing": {
+    "free": {
+      "calls_per_day": 15
+    },
+    "pro": {
+      "price": "$29/month",
+      "url": "https://meok.ai/pricing"
+    }
+  }
+}
