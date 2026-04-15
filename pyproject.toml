@@ -5,7 +5,7 @@ build-backend = "hatchling.build"
 [project]
 name = "care-membrane-mcp"
 version = "1.0.0"
-description = "MEOK AI Labs — care-membrane-mcp"
+description = "MCP server for care membrane. Features validate care, detect threats, analyze care patterns. From MEOK AI Labs."
 license = {file = "LICENSE"}
 requires-python = ">=3.10"
 authors = [{name = "MEOK AI Labs", email = "nicholas@meok.ai"}]

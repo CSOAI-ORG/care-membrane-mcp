@@ -1,6 +1,6 @@
 name: care-membrane-mcp
-description: 'AI Safety evaluation toolkit: care scoring, threat detection, burnout
-  analysis, relationship predict'
+description: MCP server for care membrane. Features validate care, detect threats,
+  analyze care patterns. From MEOK AI Labs.
 version: 1.0.0
 tools:
 - name: validate_care
