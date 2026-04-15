@@ -25,3 +25,6 @@ Repository = "https://github.com/CSOAI-ORG/care-membrane-mcp"
 [tool.hatch.build.targets.wheel]
 packages = ["."]
 only-include = ["server.py"]
+
+[project.scripts]
+care_membrane_mcp = "server:main"
