@@ -1,6 +1,6 @@
 {
   "name": "care-membrane-mcp",
-  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 Sovereign AI tools for everyone.",
+  "description": "> **By [MEOK AI Labs](https://meok.ai)** \u2014 AI Safety evaluation toolkit: care scoring, threat detection, burnout analysis, relationship predict",
   "version": "1.0.0",
   "tools": [
     {
