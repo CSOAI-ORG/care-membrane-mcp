@@ -57,4 +57,16 @@ python server.py
 This is one of 255+ MCP servers by MEOK AI Labs. Browse all at [meok.ai](https://meok.ai) or [GitHub](https://github.com/CSOAI-ORG).
 
 ---
-**MEOK AI Labs** | [meok.ai](https://meok.ai) | nicholas@meok.ai | United Kingdom
+
+## 🏢 Enterprise & Pro Licensing
+
+| Plan | Price | Link |
+|------|-------|------|
+| **Care Membrane Safety MCP** | £9/mo | [Subscribe](https://buy.stripe.com/aFadRb5Sc7sucIBaqI8k803) |
+| **Compliance Trinity** | £79/mo | [Subscribe](https://buy.stripe.com/eVq5kF2G0aEG3812Yg8k82i) |
+| **Full Suite** (9 MCPs) | £999/mo | [Subscribe](https://buy.stripe.com/6oU14p0xS4giaAtbuM8k82q) |
+
+> Built on care ethics by [CSOAI](https://csoai.org) — the Council for Safety of AI.
+
+---
+**MEOK AI Labs** | [meok.ai](https://meok.ai) | [csoai.org](https://csoai.org) | nicholas@meok.ai
