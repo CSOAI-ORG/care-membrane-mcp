@@ -28,6 +28,22 @@ cd care-membrane-mcp
 python server.py
 ```
 
+## Zero-Friction Tools
+
+### `quick_check`
+Paste any AI response, get instant care score + threat detection. **No API key needed.**
+
+```
+quick_check(text="I understand your concern and I'm here to help")
+```
+
+### `what_is_care_membrane`
+Explains the 16-probe Care Membrane framework. **No parameters needed.**
+
+```
+what_is_care_membrane()
+```
+
 ## Claude Desktop Config
 
 ```json

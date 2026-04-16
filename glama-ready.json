@@ -1,0 +1,28 @@
+{
+  "name": "care-membrane-mcp",
+  "description": "AI governance with care ethics. Validate AI actions against 16-probe care membrane framework based on Noddings/Tronto care ethics.",
+  "author": "MEOK AI Labs",
+  "website": "https://meok.ai",
+  "repository": "https://github.com/CSOAI-ORG/care-membrane-mcp",
+  "license": "MIT",
+  "category": "AI Governance",
+  "tags": ["ai-governance", "compliance", "care-ethics", "meok", "mcp"],
+  "install": {
+    "type": "pypi",
+    "package": "care-membrane-mcp"
+  },
+  "tools": [
+    {
+      "name": "validate_care",
+      "description": "Validate an action against the care membrane"
+    },
+    {
+      "name": "detect_threats",
+      "description": "Detect potential threats to care relationships"
+    },
+    {
+      "name": "analyze_care_patterns",
+      "description": "Analyze patterns of care over time"
+    }
+  ]
+}
