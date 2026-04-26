@@ -408,7 +408,7 @@ def validate_care(text: str, api_key: str = "") -> dict:
     positive/negative signal counts, and manipulation detection."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://buy.stripe.com/14A4gB3K4eUWgYR56o8k836"}
 
     err = _check_rate_limit()
     if err:
@@ -423,7 +423,7 @@ def detect_threats(text: str, api_key: str = "") -> dict:
     threat breakdown."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://buy.stripe.com/14A4gB3K4eUWgYR56o8k836"}
 
     err = _check_rate_limit()
     if err:
@@ -449,7 +449,7 @@ def analyze_care_patterns(
     Returns burnout risk score (0-100), reciprocity ratio, and actionable recommendations."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://buy.stripe.com/14A4gB3K4eUWgYR56o8k836"}
 
     err = _check_rate_limit()
     if err:
@@ -474,7 +474,7 @@ def predict_relationship_evolution(
     trajectory, phase, and key positive/concerning factors."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://buy.stripe.com/14A4gB3K4eUWgYR56o8k836"}
 
     err = _check_rate_limit()
     if err:
@@ -489,7 +489,7 @@ def evaluate_care_membrane(response_text: str, probe_id: str = "all", api_key: s
     Returns posture score (0-100), certification level, and per-probe results."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://buy.stripe.com/14A4gB3K4eUWgYR56o8k836"}
 
     err = _check_rate_limit()
     if err:
@@ -548,7 +548,7 @@ def get_care_probes(api_key: str = "") -> dict:
     """List all 16 Care Membrane probes with their categories and expected behaviors."""
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://meok.ai/pricing"}
+        return {"error": msg, "upgrade_url": "https://buy.stripe.com/14A4gB3K4eUWgYR56o8k836"}
 
     return {
         "probes": [
