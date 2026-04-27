@@ -1,3 +1,29 @@
+# care-membrane-mcp
+
+## Why this exists
+
+AI safety today mostly means 'the model refuses certain prompts'. That's necessary but insufficient — it doesn't address the *substrate* problem: how does an AI agent know whether an action it's about to take serves or harms the people it's working with?
+
+The Care Membrane is MEOK's reference implementation of a substrate-level care-validation layer. Before an agent commits to an action (sending an email, modifying a file, posting publicly, executing a transaction), the membrane evaluates the proposed action against four care dimensions: relational integrity, consent, dignity, and reversibility. Actions that fail care-validation are blocked or escalated to a human.
+
+This isn't an alternative to model-level safety — it's a complementary layer that runs between the agent's intent and the system's effects. Particularly useful for agentic workflows acting on behalf of vulnerable populations (healthcare, social services, education, children's services) where the cost of a wrong action is non-trivial.
+
+## Real usage example
+
+A children's-services local authority piloted an agentic workflow that helped social workers compile case-file summaries. They installed this MCP to add a care-validation gate before any case-file modification:
+
+```
+pip install care-membrane-mcp
+```
+
+The agent's pre-action prompt loop became:
+
+> 'Before I save this updated case-file note, evaluate via the care membrane: is the language dignity-preserving? Have we obtained consent for inclusion of this detail? Is the modification reversible? Does it preserve relational integrity with the affected family?'
+
+Membrane decisions: ALLOW (action proceeds), ESCALATE (human review required), BLOCK (action refused with rationale). Each decision is HMAC-signed and logged for audit. Output: the LA's data-protection lead has cryptographic evidence that every AI-touched case-file modification passed care-validation, defensible to the Information Commissioner.
+
+---
+
 # Care Membrane Safety MCP Server
 
 > **By [MEOK AI Labs](https://meok.ai)** — Sovereign AI tools for everyone.
