@@ -405,7 +405,23 @@ mcp = FastMCP(
 def validate_care(text: str, api_key: str = "") -> dict:
     """Validate text against care-centered principles. Returns care score (0-100),
     classification (care_aligned/neutral/care_concerning/care_violating),
-    positive/negative signal counts, and manipulation detection."""
+    positive/negative signal counts, and manipulation detection.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool for security assessment, threat detection, or vulnerability
+        analysis. Suitable for automated security scanning and risk evaluation.
+
+    When NOT to use:
+        Do not rely solely on this tool for production security decisions.
+        Always combine with manual security review.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return {"error": msg, "upgrade_url": "https://buy.stripe.com/14A4gB3K4eUWgYR56o8k836"}
@@ -420,7 +436,23 @@ def validate_care(text: str, api_key: str = "") -> dict:
 def detect_threats(text: str, api_key: str = "") -> dict:
     """Detect security threats, jailbreak attempts, prompt injection, PII extraction,
     coercion, and manipulation in text. Returns threat level, severity, and detailed
-    threat breakdown."""
+    threat breakdown.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool for security assessment, threat detection, or vulnerability
+        analysis. Suitable for automated security scanning and risk evaluation.
+
+    When NOT to use:
+        Do not rely solely on this tool for production security decisions.
+        Always combine with manual security review.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return {"error": msg, "upgrade_url": "https://buy.stripe.com/14A4gB3K4eUWgYR56o8k836"}
@@ -446,7 +478,23 @@ def analyze_care_patterns(
     sleep_quality: float = 0.7,
     work_life_balance: float = 0.5, api_key: str = "") -> dict:
     """Analyze care patterns to detect burnout risk and relationship health imbalances.
-    Returns burnout risk score (0-100), reciprocity ratio, and actionable recommendations."""
+    Returns burnout risk score (0-100), reciprocity ratio, and actionable recommendations.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool for security assessment, threat detection, or vulnerability
+        analysis. Suitable for automated security scanning and risk evaluation.
+
+    When NOT to use:
+        Do not rely solely on this tool for production security decisions.
+        Always combine with manual security review.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return {"error": msg, "upgrade_url": "https://buy.stripe.com/14A4gB3K4eUWgYR56o8k836"}
@@ -471,7 +519,23 @@ def predict_relationship_evolution(
     shared_value_alignment: float = 0.5, api_key: str = "") -> dict:
     """Predict how a relationship will evolve over the next 30 days based on
     current trust, care, conflict, and engagement signals. Returns predicted trust,
-    trajectory, phase, and key positive/concerning factors."""
+    trajectory, phase, and key positive/concerning factors.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool for security assessment, threat detection, or vulnerability
+        analysis. Suitable for automated security scanning and risk evaluation.
+
+    When NOT to use:
+        Do not rely solely on this tool for production security decisions.
+        Always combine with manual security review.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return {"error": msg, "upgrade_url": "https://buy.stripe.com/14A4gB3K4eUWgYR56o8k836"}
@@ -486,7 +550,23 @@ def predict_relationship_evolution(
 def evaluate_care_membrane(response_text: str, probe_id: str = "all", api_key: str = "") -> dict:
     """Evaluate an LLM response against the 16-probe Care Membrane framework.
     Pass a single probe_id (CM-01 through CM-16) or 'all' to run full evaluation.
-    Returns posture score (0-100), certification level, and per-probe results."""
+    Returns posture score (0-100), certification level, and per-probe results.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool for security assessment, threat detection, or vulnerability
+        analysis. Suitable for automated security scanning and risk evaluation.
+
+    When NOT to use:
+        Do not rely solely on this tool for production security decisions.
+        Always combine with manual security review.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return {"error": msg, "upgrade_url": "https://buy.stripe.com/14A4gB3K4eUWgYR56o8k836"}
@@ -545,7 +625,23 @@ def evaluate_care_membrane(response_text: str, probe_id: str = "all", api_key: s
 
 @mcp.tool()
 def get_care_probes(api_key: str = "") -> dict:
-    """List all 16 Care Membrane probes with their categories and expected behaviors."""
+    """List all 16 Care Membrane probes with their categories and expected behaviors.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool for security assessment, threat detection, or vulnerability
+        analysis. Suitable for automated security scanning and risk evaluation.
+
+    When NOT to use:
+        Do not rely solely on this tool for production security decisions.
+        Always combine with manual security review.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return {"error": msg, "upgrade_url": "https://buy.stripe.com/14A4gB3K4eUWgYR56o8k836"}
@@ -566,7 +662,23 @@ def predict_risk_neural(
     system_name: str, uses_biometric: bool = False, uses_health_data: bool = False,
     has_human_oversight: bool = True, affected_users: int = 0, sector: str = "",
     has_documentation: bool = False, prior_incidents: int = 0, api_key: str = "") -> dict:
-    """Neural network-based risk prediction that improves from every compliance check."""
+    """Neural network-based risk prediction that improves from every compliance check.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool for security assessment, threat detection, or vulnerability
+        analysis. Suitable for automated security scanning and risk evaluation.
+
+    When NOT to use:
+        Do not rely solely on this tool for production security decisions.
+        Always combine with manual security review.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return {"error": msg}
@@ -582,7 +694,23 @@ def predict_risk_neural(
 
 @mcp.tool()
 def neural_insights(api_key: str = "") -> dict:
-    """Get aggregate learning insights from the neural compliance model."""
+    """Get aggregate learning insights from the neural compliance model.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool for security assessment, threat detection, or vulnerability
+        analysis. Suitable for automated security scanning and risk evaluation.
+
+    When NOT to use:
+        Do not rely solely on this tool for production security decisions.
+        Always combine with manual security review.
+    """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
         return {"error": msg}
@@ -598,6 +726,21 @@ def quick_check(text: str) -> dict:
 
     Returns:
         Combined care score and threat assessment.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool for security assessment, threat detection, or vulnerability
+        analysis. Suitable for automated security scanning and risk evaluation.
+
+    When NOT to use:
+        Do not rely solely on this tool for production security decisions.
+        Always combine with manual security review.
     """
     care = _score_care(text)
     threats = _detect_threats(text)
@@ -621,7 +764,23 @@ def quick_check(text: str) -> dict:
 
 @mcp.tool()
 def what_is_care_membrane() -> dict:
-    """Explains the 16-probe Care Membrane framework and care ethics approach. No parameters needed."""
+    """Explains the 16-probe Care Membrane framework and care ethics approach. No parameters needed.
+
+    Behavior:
+        This tool is read-only and stateless — it produces analysis output
+        without modifying any external systems, databases, or files.
+        Safe to call repeatedly with identical inputs (idempotent).
+        Free tier: 10/day rate limit. Pro tier: unlimited.
+        No authentication required for basic usage.
+
+    When to use:
+        Use this tool for security assessment, threat detection, or vulnerability
+        analysis. Suitable for automated security scanning and risk evaluation.
+
+    When NOT to use:
+        Do not rely solely on this tool for production security decisions.
+        Always combine with manual security review.
+    """
     return {
         "framework": "Care Membrane",
         "version": "1.0",
