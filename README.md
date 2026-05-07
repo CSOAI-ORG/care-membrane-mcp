@@ -127,3 +127,4 @@ If you find this MCP server useful, please star the repo and share it with your 
 [![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/care-membrane-mcp)](https://github.com/CSOAI-ORG/care-membrane-mcp)
 
 **Questions?** [Open an issue](https://github.com/CSOAI-ORG/care-membrane-mcp/issues) or email nicholas@csoai.org
+<!-- mcp-name: io.github.CSOAI-ORG/care-membrane-mcp -->
