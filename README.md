@@ -1,3 +1,5 @@
+[![care-membrane-mcp MCP server](https://glama.ai/mcp/servers/CSOAI-ORG/care-membrane-mcp/badges/card.svg)](https://glama.ai/mcp/servers/CSOAI-ORG/care-membrane-mcp)
+
 # care-membrane-mcp
 
 ## Why this exists
