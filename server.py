@@ -421,6 +421,11 @@ def validate_care(text: str, api_key: str = "") -> dict:
     When NOT to use:
         Do not rely solely on this tool for production security decisions.
         Always combine with manual security review.
+
+    Args:
+        text (str): The text to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -466,6 +471,11 @@ def detect_threats(text: str, api_key: str = "") -> dict:
     When NOT to use:
         Do not rely solely on this tool for production security decisions.
         Always combine with manual security review.
+
+    Args:
+        text (str): The text to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -522,6 +532,22 @@ def analyze_care_patterns(
     When NOT to use:
         Do not rely solely on this tool for production security decisions.
         Always combine with manual security review.
+
+    Args:
+        care_given_per_day (float): The care given per day to analyze or process.
+        care_received_per_day (float): The care received per day to analyze or process.
+        active_relationships (int): The active relationships to analyze or process.
+        high_demand_relationships (int): The high demand relationships to analyze or process.
+        avg_care_quality (float): The avg care quality to analyze or process.
+        days_since_self_care (int): The days since self care to analyze or process.
+        boundary_violations (int): The boundary violations to analyze or process.
+        emotional_exhaustion_score (float): The emotional exhaustion score to analyze or process.
+        relationship_satisfaction (float): The relationship satisfaction to analyze or process.
+        energy_level (float): The energy level to analyze or process.
+        sleep_quality (float): The sleep quality to analyze or process.
+        work_life_balance (float): The work life balance to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -577,6 +603,20 @@ def predict_relationship_evolution(
     When NOT to use:
         Do not rely solely on this tool for production security decisions.
         Always combine with manual security review.
+
+    Args:
+        current_trust (float): The current trust to analyze or process.
+        interaction_frequency (float): The interaction frequency to analyze or process.
+        care_score_avg (float): The care score avg to analyze or process.
+        conflict_count (int): The conflict count to analyze or process.
+        collaboration_count (int): The collaboration count to analyze or process.
+        days_since_first_contact (int): The days since first contact to analyze or process.
+        reciprocity_score (float): The reciprocity score to analyze or process.
+        vulnerability_sharing (float): The vulnerability sharing to analyze or process.
+        boundary_respect (float): The boundary respect to analyze or process.
+        shared_value_alignment (float): The shared value alignment to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -622,6 +662,12 @@ def evaluate_care_membrane(response_text: str, probe_id: str = "all", api_key: s
     When NOT to use:
         Do not rely solely on this tool for production security decisions.
         Always combine with manual security review.
+
+    Args:
+        response_text (str): The response text to analyze or process.
+        probe_id (str): The probe id to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -711,6 +757,10 @@ def get_care_probes(api_key: str = "") -> dict:
     When NOT to use:
         Do not rely solely on this tool for production security decisions.
         Always combine with manual security review.
+
+    Args:
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -762,6 +812,18 @@ def predict_risk_neural(
     When NOT to use:
         Do not rely solely on this tool for production security decisions.
         Always combine with manual security review.
+
+    Args:
+        system_name (str): The system name to analyze or process.
+        uses_biometric (bool): The uses biometric to analyze or process.
+        uses_health_data (bool): The uses health data to analyze or process.
+        has_human_oversight (bool): The has human oversight to analyze or process.
+        affected_users (int): The affected users to analyze or process.
+        sector (str): The sector to analyze or process.
+        has_documentation (bool): The has documentation to analyze or process.
+        prior_incidents (int): The prior incidents to analyze or process.
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
@@ -808,6 +870,10 @@ def neural_insights(api_key: str = "") -> dict:
     When NOT to use:
         Do not rely solely on this tool for production security decisions.
         Always combine with manual security review.
+
+    Args:
+        api_key (str): The api key to analyze or process.
+
     Behavioral Transparency:
         - Side Effects: This tool is read-only and produces no side effects. It does not modify
           any external state, databases, or files. All output is computed in-memory and returned
