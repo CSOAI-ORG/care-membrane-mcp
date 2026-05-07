@@ -1,17 +1,19 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.CSOAI-ORG/care-membrane-mcp",
-  "description": "Care-aligned safety scoring for AI outputs \u2014 by MEOK AI Labs.",
+  "name": "CSOAI-ORG/care-membrane-mcp",
+  "version": "1.0.0",
+  "description": "Care Membrane MCP Server by MEOK AI Labs",
   "repository": {
+    "type": "git",
     "url": "https://github.com/CSOAI-ORG/care-membrane-mcp",
-    "source": "github"
+    "source": "https://github.com/CSOAI-ORG/care-membrane-mcp"
   },
-  "version": "1.0.2",
   "packages": [
     {
       "registryType": "pypi",
       "identifier": "care-membrane-mcp",
-      "version": "1.0.2",
+      "version": "1.0.0",
+      "runtimeHint": "python",
       "transport": {
         "type": "stdio"
       }
