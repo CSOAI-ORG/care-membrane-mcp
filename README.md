@@ -1,5 +1,20 @@
 # care-membrane-mcp
 
+[![PyPI](https://img.shields.io/pypi/v/care-membrane-mcp)](https://pypi.org/project/care-membrane-mcp/) [![Python](https://img.shields.io/pypi/pyversions/care-membrane-mcp)](https://pypi.org/project/care-membrane-mcp/)
+
+
+
+## Quick Install
+
+| Client | Install |
+|--------|---------|
+| **Claude Desktop** | [![Install in Claude](https://img.shields.io/badge/Install-Claude-blue)](https://claude.ai) |
+| **Cursor** | [![Install in Cursor](https://img.shields.io/badge/Install-Cursor-black)](https://cursor.com) |
+| **VS Code** | [![Install in VS Code](https://img.shields.io/badge/Install-VS_Code-blue)](https://code.visualstudio.com) |
+| **Windsurf** | [![Install in Windsurf](https://img.shields.io/badge/Install-Windsurf-purple)](https://codeium.com/windsurf) |
+| **Docker** | `docker run -p 8000:8000 care-membrane-mcp` |
+| **pip** | `pip install care-membrane-mcp` |
+
 ## Why this exists
 
 AI safety today mostly means 'the model refuses certain prompts'. That's necessary but insufficient — it doesn't address the *substrate* problem: how does an AI agent know whether an action it's about to take serves or harms the people it's working with?
@@ -124,4 +139,22 @@ If you find this MCP server useful, please star the repo and share it with your 
 
 [![GitHub stars](https://img.shields.io/github/stars/CSOAI-ORG/care-membrane-mcp)](https://github.com/CSOAI-ORG/care-membrane-mcp)
 
-**Questions?** [Open an issue](https://github.com/CSOAI-ORG/care-membrane-mcp/issues) or email nicholas@csoai.org
+**Questions?** [Open an issue](https://github.com/CSOAI-ORG/care-membrane-mcp/issues) or email nicholas@meok.ai
+
+<!-- meok-moat-footer-v1 -->
+---
+
+## Pairs with MEOK Governance Suite
+
+Build something that touches users? You need compliance. MEOK ships 38 governance MCPs that drop in alongside this tool — EU AI Act, DORA, NIS2, CRA, GDPR, ISO 42001, FDA SaMD, MDR, Basel, MiFID II, MiCA, COPPA, and more.
+
+```bash
+# One-shot install of the governance pack
+npx meok-setup --pack governance
+```
+
+Free tier: 10 calls/day per MCP. Pro tier (£79/mo): unlimited + cryptographically signed compliance attestations your auditor verifies independently.
+
+→ Full catalogue: [councilof.ai/catalogue](https://councilof.ai/catalogue)
+→ MEOK AI Labs: [meok.ai](https://meok.ai)
+
