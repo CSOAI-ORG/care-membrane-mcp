@@ -443,7 +443,7 @@ def validate_care(text: str, api_key: str = "") -> dict:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://buy.stripe.com/14A4gB3K4eUWgYR56o8k836"}
+        return {"error": msg, "upgrade_url": "https://buy.stripe.com/00wfZjcgAeUW4c5cyQ8k90K"}
 
     err = _check_rate_limit()
     if err:
@@ -493,7 +493,7 @@ def detect_threats(text: str, api_key: str = "") -> dict:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://buy.stripe.com/14A4gB3K4eUWgYR56o8k836"}
+        return {"error": msg, "upgrade_url": "https://buy.stripe.com/00wfZjcgAeUW4c5cyQ8k90K"}
 
     err = _check_rate_limit()
     if err:
@@ -565,7 +565,7 @@ def analyze_care_patterns(
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://buy.stripe.com/14A4gB3K4eUWgYR56o8k836"}
+        return {"error": msg, "upgrade_url": "https://buy.stripe.com/00wfZjcgAeUW4c5cyQ8k90K"}
 
     err = _check_rate_limit()
     if err:
@@ -634,7 +634,7 @@ def predict_relationship_evolution(
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://buy.stripe.com/14A4gB3K4eUWgYR56o8k836"}
+        return {"error": msg, "upgrade_url": "https://buy.stripe.com/00wfZjcgAeUW4c5cyQ8k90K"}
 
     err = _check_rate_limit()
     if err:
@@ -685,7 +685,7 @@ def evaluate_care_membrane(response_text: str, probe_id: str = "all", api_key: s
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://buy.stripe.com/14A4gB3K4eUWgYR56o8k836"}
+        return {"error": msg, "upgrade_url": "https://buy.stripe.com/00wfZjcgAeUW4c5cyQ8k90K"}
 
     err = _check_rate_limit()
     if err:
@@ -778,7 +778,7 @@ def get_care_probes(api_key: str = "") -> dict:
     """
     allowed, msg, tier = check_access(api_key)
     if not allowed:
-        return {"error": msg, "upgrade_url": "https://buy.stripe.com/14A4gB3K4eUWgYR56o8k836"}
+        return {"error": msg, "upgrade_url": "https://buy.stripe.com/00wfZjcgAeUW4c5cyQ8k90K"}
 
     return {
         "probes": [
