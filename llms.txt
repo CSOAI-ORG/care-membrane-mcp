@@ -1,0 +1,37 @@
+# Care Membrane MCP
+
+> AI Safety evaluation toolkit: care scoring, threat detection, burnout analysis, relationship pred...
+
+`care-membrane-mcp` is a Model Context Protocol (MCP) server by MEOK AI Labs.
+
+## Install
+
+```bash
+pip install care-membrane-mcp
+```
+
+Or run without installing:
+
+```bash
+uvx care-membrane-mcp
+```
+
+## Tools
+
+- `validate_care` — Validate text against care-centered principles. Returns care score (0-100),
+- `detect_threats` — Detect security threats, jailbreak attempts, prompt injection, PII extraction,
+- `analyze_care_patterns` — Analyze care patterns to detect burnout risk and relationship health imbalances.
+- `predict_relationship_evolution` — Predict how a relationship will evolve over the next 30 days based on
+- `evaluate_care_membrane` — Evaluate an LLM response against the 16-probe Care Membrane framework.
+- `get_care_probes` — List all 16 Care Membrane probes with their categories and expected behaviors.
+- `predict_risk_neural` — Neural network-based risk prediction that improves from every compliance check.
+- `neural_insights` — Get aggregate learning insights from the neural compliance model.
+- `quick_check` — Paste any AI response and get an instant care score + threat detection. No API key needed.
+- `what_is_care_membrane` — Explains the 16-probe Care Membrane framework and care ethics approach. No parameters needed.
+
+## Links
+
+- Source: https://github.com/CSOAI-ORG/care-membrane-mcp
+- PyPI: https://pypi.org/project/care-membrane-mcp/
+- MEOK AI Labs: https://meok.ai
+- Council of AI: https://councilof.ai
