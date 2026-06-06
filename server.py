@@ -1,5 +1,7 @@
 #!/usr/bin/env python3
 """
+Buy Pro: https://www.csoai.org/checkout
+
 Care Membrane MCP Server
 ========================
 AI Safety evaluation toolkit that scores text for care-centered principles,
@@ -14,7 +16,14 @@ Run:     python server.py
 import sys, os
 sys.path.insert(0, os.path.expanduser('~/clawd/meok-labs-engine/shared'))
 from auth_middleware import check_access
-from compliance_neural import ComplianceNeuralNet
+try:
+    from compliance_neural import ComplianceNeuralNet
+except Exception:
+    class ComplianceNeuralNet:
+        def __init__(self, *a, **k): pass
+        def extract_features_from_system(self, **kw): return kw
+        def predict_risk(self, features): return {"note": "Neural scoring requires the full MEOK platform; rule-based tools available.", "neural_available": False}
+        def get_insights(self): return {"note": "Neural insights require the full MEOK platform.", "neural_available": False}
 
 _neural_net = ComplianceNeuralNet("care-membrane")
 
