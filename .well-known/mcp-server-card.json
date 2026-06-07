@@ -1,0 +1,43 @@
+{
+  "name": "care-membrane-mcp",
+  "title": "Care Membrane Mcp",
+  "description": "MCP server for care membrane. Features validate care, detect threats, analyze care patterns. From MEOK AI Labs.",
+  "version": "1.0.7",
+  "homepage": "https://meok.ai",
+  "license": "MIT",
+  "transport": {
+    "type": "stdio"
+  },
+  "tools": [
+    {
+      "name": "validate_care"
+    },
+    {
+      "name": "detect_threats"
+    },
+    {
+      "name": "analyze_care_patterns"
+    },
+    {
+      "name": "predict_relationship_evolution"
+    },
+    {
+      "name": "evaluate_care_membrane"
+    },
+    {
+      "name": "get_care_probes"
+    },
+    {
+      "name": "predict_risk_neural"
+    },
+    {
+      "name": "neural_insights"
+    },
+    {
+      "name": "quick_check"
+    },
+    {
+      "name": "what_is_care_membrane"
+    }
+  ]
+}

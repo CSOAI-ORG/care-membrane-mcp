@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 """
-Buy Pro: https://www.csoai.org/checkout
-
 Care Membrane MCP Server
 ========================
 AI Safety evaluation toolkit that scores text for care-centered principles,
