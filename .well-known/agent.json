@@ -1,0 +1,113 @@
+{
+  "name": "care-membrane-mcp",
+  "description": "Care Membrane MCP Server by MEOK AI Labs",
+  "url": "https://proofof.ai/scorecard/care-membrane-mcp.html",
+  "version": "1.0.7",
+  "protocolVersion": "0.2.0",
+  "provider": {
+    "organization": "MEOK AI Labs",
+    "url": "https://meok.ai"
+  },
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "validate_care",
+      "name": "Validate Care",
+      "description": "validate_care via care-membrane-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "detect_threats",
+      "name": "Detect Threats",
+      "description": "detect_threats via care-membrane-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "analyze_care_patterns",
+      "name": "Analyze Care Patterns",
+      "description": "analyze_care_patterns via care-membrane-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "predict_relationship_evolution",
+      "name": "Predict Relationship Evolution",
+      "description": "predict_relationship_evolution via care-membrane-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "evaluate_care_membrane",
+      "name": "Evaluate Care Membrane",
+      "description": "evaluate_care_membrane via care-membrane-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "get_care_probes",
+      "name": "Get Care Probes",
+      "description": "get_care_probes via care-membrane-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "predict_risk_neural",
+      "name": "Predict Risk Neural",
+      "description": "predict_risk_neural via care-membrane-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "neural_insights",
+      "name": "Neural Insights",
+      "description": "neural_insights via care-membrane-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "quick_check",
+      "name": "Quick Check",
+      "description": "quick_check via care-membrane-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    },
+    {
+      "id": "what_is_care_membrane",
+      "name": "What Is Care Membrane",
+      "description": "what_is_care_membrane via care-membrane-mcp",
+      "tags": [
+        "mcp",
+        "compliance"
+      ]
+    }
+  ]
+}
