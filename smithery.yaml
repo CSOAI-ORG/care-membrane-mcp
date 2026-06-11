@@ -104,3 +104,10 @@ tools:
   description: List all 16 Care Membrane probes with their categories and expected
     behaviors.
   parameters: []
+
+startCommand:
+  type: stdio
+  command: uv
+  args:
+    - run
+    - care_membrane_mcp
