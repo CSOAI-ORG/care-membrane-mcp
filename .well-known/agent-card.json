@@ -1,0 +1,192 @@
+{
+  "name": "Care Membrane Mcp",
+  "version": "1.0.7",
+  "url": "https://mcp.meok.ai/care-membrane-mcp/a2a",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false,
+    "stateTransitionHistory": false
+  },
+  "protocolVersion": "0.3.0",
+  "description": "MCP server for care membrane. Features validate care, detect threats, analyze care patterns. From MEOK AI Labs.",
+  "provider": {
+    "organization": "MEOK AI LABS",
+    "url": "https://meok.ai"
+  },
+  "defaultInputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "defaultOutputModes": [
+    "application/json",
+    "text/plain"
+  ],
+  "skills": [
+    {
+      "id": "validate_care",
+      "name": "Validate Care",
+      "description": "Validate Care — a tool of the care-membrane-mcp MCP.",
+      "tags": [
+        "care"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "detect_threats",
+      "name": "Detect Threats",
+      "description": "Detect Threats — a tool of the care-membrane-mcp MCP.",
+      "tags": [
+        "care"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "analyze_care_patterns",
+      "name": "Analyze Care Patterns",
+      "description": "Analyze Care Patterns — a tool of the care-membrane-mcp MCP.",
+      "tags": [
+        "care"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "predict_relationship_evolution",
+      "name": "Predict Relationship Evolution",
+      "description": "Predict Relationship Evolution — a tool of the care-membrane-mcp MCP.",
+      "tags": [
+        "care"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "evaluate_care_membrane",
+      "name": "Evaluate Care Membrane",
+      "description": "Evaluate Care Membrane — a tool of the care-membrane-mcp MCP.",
+      "tags": [
+        "care"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "get_care_probes",
+      "name": "Get Care Probes",
+      "description": "Get Care Probes — a tool of the care-membrane-mcp MCP.",
+      "tags": [
+        "care"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "predict_risk_neural",
+      "name": "Predict Risk Neural",
+      "description": "Predict Risk Neural — a tool of the care-membrane-mcp MCP.",
+      "tags": [
+        "care"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "neural_insights",
+      "name": "Neural Insights",
+      "description": "Neural Insights — a tool of the care-membrane-mcp MCP.",
+      "tags": [
+        "care"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "quick_check",
+      "name": "Quick Check",
+      "description": "Quick Check — a tool of the care-membrane-mcp MCP.",
+      "tags": [
+        "care"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    },
+    {
+      "id": "what_is_care_membrane",
+      "name": "What Is Care Membrane",
+      "description": "What Is Care Membrane — a tool of the care-membrane-mcp MCP.",
+      "tags": [
+        "care"
+      ],
+      "inputModes": [
+        "application/json",
+        "text/plain"
+      ],
+      "outputModes": [
+        "application/json",
+        "text/plain"
+      ]
+    }
+  ],
+  "documentationUrl": "https://meok.ai",
+  "x-meok": {
+    "mcp_name": "care-membrane-mcp",
+    "verifier": "https://proofof.ai/verify",
+    "governed_by": "CSOAI 52-article charter"
+  }
+}
