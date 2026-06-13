@@ -4,9 +4,9 @@
   "version": "1.0.10",
   "description": "Care Membrane MCP Server by MEOK AI Labs",
   "repository": {
-    "type": "git",
     "url": "https://github.com/CSOAI-ORG/care-membrane-mcp",
-    "source": "https://github.com/CSOAI-ORG/care-membrane-mcp"
+    "source": "github",
+    "id": "1209265622"
   },
   "packages": [
     {
