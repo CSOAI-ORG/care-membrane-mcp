@@ -1,4 +1,4 @@
-<!-- mcp-name: CSOAI-ORG/care-membrane-mcp -->
+<!-- mcp-name: io.github.CSOAI-ORG/care-membrane-mcp -->
 [![MCP Scorecard: 80/100](https://img.shields.io/badge/proofof.ai-80%2F100-5b21b6)](https://proofof.ai/scorecard/care-membrane-mcp.html)
 
 # Care Membrane MCP
@@ -259,3 +259,7 @@ See [meok.ai/mcp-stack](https://meok.ai/mcp-stack) for the architecture and [meo
 
 <!-- BUY-LADDER:END -->
 
+## See also
+
+MEOK compliance MCP fleet:
+[`care-home-cqc-mcp`](https://github.com/CSOAI-ORG/care-home-cqc-mcp)
